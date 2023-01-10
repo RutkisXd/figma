@@ -1,0 +1,52 @@
+.third-section {
+    .third-section-wrapper {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 20px;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @include sm {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .third-section-image-wrapper {
+
+            @include sm {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .third-section-image {
+                object-fit: contain;
+                height: auto;
+                width: 70%;
+
+                @include sm {
+                    width: 80%;
+                    height: auto;
+                    display: flex;
+                }
+
+                @include md {
+                    width: 90%;
+                }
+            }
+        }
+
+        .third-section-text-wrapper {
+            .features-header-top-text {}
+            .features-header-bottom-text {}
+            .features-description {}
+            a.button-get-started {}
+        }
+    }
+
+}

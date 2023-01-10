@@ -1,0 +1,121 @@
+.features-section {
+    .features-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        @include sm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .features-text-wrapper {
+            .features-header {
+                .features-header-top-text{}
+                .features-header-bottom-text{}
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0.04em;
+                    color: #4F4F4F;
+            }
+            }
+            
+            a.button-get-started{}
+        }
+
+        .features-cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            gap: 30px;
+
+            @include sm {
+                padding-top: 40px;
+            }
+
+            .feature-card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                border-radius: 8px;
+                width: 30%;
+                padding: 40px;
+
+                @include sm {
+                    width: 80%;
+                }
+
+                .feature-card-image {
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04)
+                }
+
+                .feature-card-image-hover {
+                    display: none;
+                }
+            
+                &:hover {
+
+                    background-color: white;
+                    box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+
+                    .feature-card-image {
+                        display: none;
+                    }
+                    .feature-card-image-hover {
+                        display: block;
+                    }
+                }
+            
+
+                .card-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .card-title {
+                        font-family: 'Open Sans';
+                        font-style: italic;
+                        font-weight: 300;
+                        font-size: 24px;
+                        color: #333333;
+                    }
+                    .card-description {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        color: #4F4F4F;
+                    }
+                } 
+            }
+     
+            .decorations {
+
+                @include sm {
+                    display: none;
+                }
+
+                @include md {
+                    display: none;
+                }
+
+                .decoration {
+                    position: absolute;
+                    width: 720px;
+                    height: 140px;
+                    left: -150px;
+                    top: 770px;
+                    z-index: -1;  
+                    background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+                    
+                } 
+            }
+        }
+}

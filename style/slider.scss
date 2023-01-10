@@ -1,0 +1,105 @@
+.slider-section {
+    .slider-wrapper{
+        .slider-top-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+
+            @include sm {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .slider-section-text-wrapper{
+                .features-header-top-text{}
+                .features-header-bottom-text{}
+            }
+
+            .slider-function {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                width: 140px;
+                height: 60px;
+
+                @include sm {
+                    display: none;
+                }
+    
+                .slider-function-left {
+                    .slider-image-left {
+                    }
+                }
+                .slider-function-right {
+                    .slider-image-right {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            
+
+
+        }
+
+
+        .slider-cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 60px;
+
+            @include sm {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-content: center;
+            }
+
+            .slider-card{
+                padding: 30px;
+                width: 20%;
+                background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                border-radius: 10px;
+
+                @include sm {
+                    width: 65%;
+                }
+
+                .photo-and-credentials {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+                    .slider-card-image{
+                        object-fit: contain;
+                        width: 70%;
+                    }
+                
+
+                    .name-lastname {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+
+                        .slider-card-title{}
+                        .slider-card-name{}
+                    }
+                }
+                
+                .slider-card-bottom-text{}
+            }
+        }
+    }
+}

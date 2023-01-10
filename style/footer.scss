@@ -1,0 +1,85 @@
+.footer-section {
+    background: #F0DCC5;
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @include sm {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-contacts-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .footer-logo-wrapper {
+                .footer-logo {
+                    object-fit: contain;
+                    height: 40px;
+                    width: 180px;
+                }
+            }
+            .footer-contact-text{}
+            .footer-contacts-copyright {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-media-icons-wrapper{
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+            }
+        }
+        .footer-company-links-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a.footer-link {}
+        }
+        .footer-support-links-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a.footer-link {}
+        }
+        .footer-send-message-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            textarea {
+                float: left;
+                width:100%;
+                height: auto;
+
+            }
+
+            a.button-submit {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: $green-color;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+                font-size: 14px;
+                font-weight: 700;
+                padding: 20px 30px;
+                max-width:95%;
+
+                @include sm {
+                    max-width:95%;
+                }
+                .submit {}
+            }
+        }
+    }
+}

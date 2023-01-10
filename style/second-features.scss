@@ -1,0 +1,120 @@
+.second-features-section {
+    .second-features-wrapper {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .second-features-text-wrapper {
+            text-align: center;
+
+            @include sm {
+                text-align: left;
+            }
+
+            .features-header-top-text {}
+            .features-header-bottom-text {}
+        }
+
+        .second-features-cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-bottom: 40px;
+
+            @include sm {
+                flex-direction: column;
+            }
+
+            .second-features-card {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+                width: 20%;
+                border-radius: 8px;
+                padding-bottom: 40px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                @include sm {
+                    width: 80%;
+                }
+
+                .feature-card-image-wrapper {
+                    padding-bottom: 20px;
+                    padding-top: 80px;
+                }
+                .second-feature-card-text-wrapper {
+                    gap: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    .card-heading {
+                        margin: 0px;
+                    }
+                    .card-description {
+                        margin: 0px;
+                    }
+                }
+            }
+
+            .second-features-card:nth-child(2) {
+                background-color: $green-color;
+                color: white;
+
+                .feature-card-image-wrapper {
+                    padding-bottom: 20px;
+                    padding-top: 80px;
+                }
+                .second-feature-card-text-wrapper {
+                    gap: 15px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .card-heading {
+                        margin: 0px;
+                    }
+                    .card-description {
+                        margin: 0px;
+                    }
+                }
+            }
+
+            .decorations {
+
+                @include sm {
+                    display: none;
+                }
+
+                @include md {
+                    display: none;
+                }
+
+                .decoration:nth-child(1) {
+                    position: absolute;
+                    width: 214px;
+                    height: 213px;
+                    left: 106px;
+                    top: 1629px;
+                    opacity: 0.4;
+                    z-index: -1;   
+                }
+
+                .decoration:nth-child(2) {
+                    position: absolute;
+                    width: 463px;
+                    height: 182px;
+                    left: 1102px;
+                    top: 1675px;
+                    z-index: -1;   
+                }
+            }
+        }
+    }
+}
