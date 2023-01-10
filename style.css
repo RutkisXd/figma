@@ -254,7 +254,6 @@ a.footer-link {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
   gap: 30px;
 }
 @media screen and (max-width: 842px) {
